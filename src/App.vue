@@ -6,7 +6,7 @@
                 <div class="flex flex-col gap-2">
                     <div class="flex gap-2">
                         <label required>First Name</label>
-                        <span class="text-red-600 relative -top-1" v-if="r$.$fields.firstName.$isRequired">*</span>
+                        <span class="text-red-600" v-if="r$.$fields.firstName.$isRequired">*</span>
                     </div>
 
                     <input v-model="form.firstName" type="text" class="border border-gray-300 dark:border-gray-700 dark:bg-neutral-600 dark:text-gray-200 rounded p-2" />
@@ -17,7 +17,7 @@
                 <div class="flex flex-col gap-2">
                     <div class="flex gap-2">
                         <label required>Last Name</label>
-                        <span class="text-red-600 relative -top-1" v-if="r$.$fields.lastName.$isRequired">*</span>
+                        <span class="text-red-600" v-if="r$.$fields.lastName.$isRequired">*</span>
                     </div>
 
                     <input v-model="form.lastName" type="text" class="border border-gray-300 dark:border-gray-700 dark:bg-neutral-600 dark:text-gray-200 rounded p-2" />
